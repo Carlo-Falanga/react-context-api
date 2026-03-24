@@ -1,0 +1,58 @@
+@import "bootstrap";
+@import "bootstrap-icons";
+
+body {
+  font-family: "Inter Variable", sans-serif;
+}
+
+.home_jumbo {
+  height: 70vh;
+  background-image: url(../src/assets/images/2cbf0fe9-16d9-40a4-ad37-94bf0be856ab.png);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg_home_jumbo_color {
+  background-color: #f4f4f6;
+}
+
+.card_items_img {
+  height: 350px;
+  transition: 0.8s ease;
+}
+
+.card_items_img:hover {
+  transform: scale(105%);
+}
+
+.card_items_description {
+  /*
+Source - https://stackoverflow.com/a/41137262
+Posted by Jobincs, modified by community. See post 'Timeline' for change history
+Retrieved 2026-03-20, License - CC BY-SA 4.0
+*/
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card_item_title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card_shadow {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  overflow: hidden;
+}
+
+.products_title {
+  font-size: 5rem;
+}
+
+.nav-item > .active {
+  font-weight: bold;
+}
