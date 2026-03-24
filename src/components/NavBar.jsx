@@ -1,16 +1,21 @@
-import { useContext } from "react"
-import BudgetContext from "../context/BudgetContext"
+import { useContext } from "react";
+import BudgetContext from "../context/BudgetContext";
 
-export default function NavBar(){
+export default function NavBar() {
+  const { budgetMode, setBudgetMode } = useContext(BudgetContext);
 
-    const {budgetMode, setBudgetMode} = useContext(BudgetContext)
-    console.log(budgetMode, setBudgetMode);
-    
-
-
-    return(
-        <>
-        <h1>Ciaooo</h1>
-        </>
-    )
+  return (
+    <>
+      <section>
+        <div className="container text-end">
+          <button
+            className="btn btn-primary rounded-pill"
+            onClick={() => setBudgetMode(!budgetMode)}
+          >
+            {budgetMode ? "Disable Budget Mode" : "Budget Mode"}
+          </button>
+        </div>
+      </section>
+    </>
+  );
 }
